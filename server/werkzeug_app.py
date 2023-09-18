@@ -1,4 +1,4 @@
-# server/werkzeug_app.py
+#!/usr/bin/env python3
 
 from werkzeug.wrappers import Request, Response
 
@@ -11,6 +11,6 @@ if __name__ == '__main__':
     from werkzeug.serving import run_simple
     run_simple(
         hostname='localhost',
-        port=5555,
+        port=4444,
         application=application
     )
